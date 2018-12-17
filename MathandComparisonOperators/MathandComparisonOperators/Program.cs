@@ -10,33 +10,6 @@ namespace MathandComparisonOperators
     {
         static void Main(string[] args)
         {
-            //int total = 5 + 10;
-            //int otherTotal = 12 + 22;
-            //int combined = total + otherTotal;
-            //Console.WriteLine(combined);
-
-            //int difference = 10 - 5;
-            //Console.WriteLine("Ten minus five = " + difference.ToString());
-
-            //int product = 10 * 5;
-            //Console.WriteLine("Ten times five = " + product.ToString());
-
-            //int quotient = 10 / 5;
-            //Console.WriteLine("Ten divided by five = " + quotient.ToString());
-
-            //int remainder = 11 % 2;
-            //Console.WriteLine(remainder);
-
-            //bool trueOrFalse = 12 < 5;
-            //Console.Write(trueOrFalse.ToString());
-
-            //int roomTemperature = 70;
-            //int currentTemperature = 70;
-
-            //bool isWarm = currentTemperature >= roomTemperature;
-            //bool isWarm = currentTemperature == roomTemperature;
-            //bool isWarm = currentTemperature != roomTemperature;
-            //Console.WriteLine(isWarm);
 
             Console.WriteLine("Please enter a number you would like to multiply by 50: ");
             string firstNumber = Console.ReadLine();
