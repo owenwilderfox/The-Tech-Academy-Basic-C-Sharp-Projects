@@ -30,7 +30,8 @@ namespace Branching
             else
             {
                 int productDimensions = packageHeight * packageLength;
-                double packageProduct = Convert.ToDouble(productDimensions);
+                int productSize = productDimensions * packageWeight;
+                double packageProduct = Convert.ToDouble(productSize);
                 double shippingQuote = packageProduct / 100;
                 Console.WriteLine("The shipping quote for this package is $" + shippingQuote + ".");
             }
