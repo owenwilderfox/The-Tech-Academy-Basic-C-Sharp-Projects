@@ -21,8 +21,8 @@ namespace BooleanLogicProject
             int numberTickets = Convert.ToInt32(answerTickets);
             bool applicantTickets = numberTickets < 3;
 
-            bool isEligible = (isOldEnough == true && applicantDUI == false && applicantTickets == true);
-            Console.WriteLine(isEligible);
+            Console.WriteLine("Does applicant qualify for insurance?");
+            Console.WriteLine(isOldEnough == true && applicantDUI == false && applicantTickets == true);
 
             Console.ReadLine();
 
