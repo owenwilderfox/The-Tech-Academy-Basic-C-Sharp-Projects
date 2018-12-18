@@ -23,13 +23,14 @@ namespace Branching
 
             Console.WriteLine("What is the length of the package?");
             int packageLength = Convert.ToInt32(Console.ReadLine());
-            if (packageLength > 50)
+            int productDimensions = packageHeight + packageLength;
+
+            if (productDimensions > 50)
             {
                 Console.WriteLine("Package too big to be shipped via Package Express.");
             }
             else
             {
-                int productDimensions = packageHeight * packageLength;
                 int productSize = productDimensions * packageWeight;
                 double packageProduct = Convert.ToDouble(productSize);
                 double shippingQuote = packageProduct / 100;
