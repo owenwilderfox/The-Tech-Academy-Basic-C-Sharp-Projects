@@ -80,16 +80,16 @@ namespace Iteration
 
             List<string> bookTitles = new List<string>();
 
-            bookTitles.Add("Sense and Sensibility");
-            bookTitles.Add("Pride and Prejudice");
-            bookTitles.Add("Mansfield Park");
-            bookTitles.Add("Emma");
-            bookTitles.Add("Northanger Abbey");
-            bookTitles.Add("Persuasion");
-            bookTitles.Add("Lady Susan");
+            bookTitles.Add("SENSE AND SENSIBILITY");
+            bookTitles.Add("PRIDE AND PREJUDICE");
+            bookTitles.Add("MANSFIELD PARK");
+            bookTitles.Add("EMMA");
+            bookTitles.Add("NORTHANGER ABBEY");
+            bookTitles.Add("PERSUASION");
+            bookTitles.Add("LADY SUSAN");
 
             Console.WriteLine("Please enter the name of a Jane Austen novel you'd like to search for in the database. You may enter a partial name: ");
-            string searchTitle = Console.ReadLine();
+            string searchTitle = Console.ReadLine().ToUpper();
 
             foreach (string title in bookTitles)
             {
