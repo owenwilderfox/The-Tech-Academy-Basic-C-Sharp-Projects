@@ -10,21 +10,21 @@ namespace Iteration
 
             //#1: 1. Create a one-dimensional Array of strings. Ask the user to input some text. Create a loop that goes through each string in the Array, adding the user’s text to the string. Then create a loop that prints off each string in the Array on a separate line.
 
-            string[] dogNames = new string[5];
-            Console.WriteLine("Let's make a list of five dog names you enjoy:");
+            //string[] dogNames = new string[5];
+            //Console.WriteLine("Let's make a list of five dog names you enjoy:");
 
-            for (int i = 0; i < dogNames.Length; i++)
-            {
-                Console.WriteLine("What name do you like?");
-                dogNames[i] = Console.ReadLine();
-            }
+            //for (int i = 0; i < dogNames.Length; i++)
+            //{
+            //    Console.WriteLine("What name do you like?");
+            //    dogNames[i] = Console.ReadLine();
+            //}
 
-            Console.WriteLine("Here are the names that you like:");
+            //Console.WriteLine("Here are the names that you like:");
 
-            for (int i = 0; i < dogNames.Length; i++)
-            {
-                Console.WriteLine(dogNames[i]);
-            }
+            //for (int i = 0; i < dogNames.Length; i++)
+            //{
+            //    Console.WriteLine(dogNames[i]);
+            //}
 
             //#2. Create an infinite loop.
 
@@ -38,72 +38,70 @@ namespace Iteration
 
             //#3. Fix the infinite loop so it will execute.
 
-            Console.WriteLine("Let's do some multipliation. Please enter a number:");
-            int enteredNumber = Convert.ToInt32(Console.ReadLine());
-            for (int n = 1; n < 5; n++)
-            {
-                enteredNumber = enteredNumber * 9;
-                Console.WriteLine(enteredNumber);
-            }
+            //Console.WriteLine("Let's do some multipliation. Please enter a number:");
+            //int enteredNumber = Convert.ToInt32(Console.ReadLine());
+            //for (int n = 1; n < 5; n++)
+            //{
+            //    enteredNumber = enteredNumber * 9;
+            //    Console.WriteLine(enteredNumber);
+            //}
 
+            //4. Create a loop where the comparison used to determine whether to continue iterating the loop is a “<” operator.
+
+            //int[] ambientTemperature = { 99, 103, 45, 78, 67, 45, 58 };
+
+            //Console.WriteLine("This program will print out all of the temperatures entered are warmer than OSHA requirement for room temperature.");
+
+            //for (int i = 0; i < ambientTemperature.Length; i++)
+            //{
+            //    if (ambientTemperature[i] > 77)
+            //    {
+            //        Console.WriteLine("This room temperature is too warm: " + ambientTemperature[i]);
+            //    }
+            //}
+
+            //5. Create a loop where the comparison used to determine whether to continue iterating the loop is a “<=” operator.
+
+            //int[] rentalAges = { 18, 45, 34, 56, 23, 20, 21 };
+
+            //for (int i = 0; i < rentalAges.Length; i++)
+            //{
+            //    if (20 <= rentalAges[i])
+            //    {
+            //        Console.WriteLine("A driver who is " + rentalAges[i] + " can rent a car.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("A driver who is " + rentalAges[i] + " cannot rent a car.");
+            //    }
+            //}
+
+            //6. Create a List of strings where each item in the list is unique. Ask the user to select text to search for in the List. Create a loop that iterates through the list and then displays the index of the array that contains matching text on the screen.
+
+            List<string> bookTitles = new List<string>();
+
+            bookTitles.Add("Sense and Sensibility");
+            bookTitles.Add("Pride and Prejudice");
+            bookTitles.Add("Mansfield Park");
+            bookTitles.Add("Emma");
+            bookTitles.Add("Northanger Abbey");
+            bookTitles.Add("Persuasion");
+            bookTitles.Add("Lady Susan");
+
+            Console.WriteLine("Please enter the name of a Jane Austen novel you'd like to search for in the database. You may enter a partial name: ");
+            string searchTitle = Console.ReadLine();
+
+            foreach (string title in bookTitles)
+            {
+                if (title.Contains(searchTitle))
+                {
+                    Console.WriteLine(title);
+                }
+            }
 
 
             Console.ReadLine();
 
-            //int[] testScores = { 98, 99, 95, 70, 82, 34, 91, 90, 94 };
-
-            //for (int i = 0; 1 < testScores.Length; i++)
-            //{
-            //    if (testScores[i] > 85)
-            //    {
-            //        Console.WriteLine("Passing test score: " + testScores[i]);
-            //    }
-            //}
-
-            //string[] names = { "Jesse", "Daniel", "Christopher", "Abram" };
-
-            //for (int j = 0; j < names.Length; j++)
-            //{
-            //    Console.WriteLine(names[j]);
-            //}
-
-            //List<int> testScores = new List<int>();
-
-            //testScores.Add(98);
-            //testScores.Add(100);
-            //testScores.Add(67);
-            //testScores.Add(99);
-            //testScores.Add(78);
-
-            //foreach (int score in testScores)
-            //{
-            //    if (score > 85)
-            //    {
-            //        Console.WriteLine("Passing test score: " + score);
-            //    }
-            //}
-
-            //List<string> names = new List<string>() { "Jesse", "Erik", "Daniel", "Adam" };
-
-            //foreach (string name in names)
-            //{
-            //     Console.WriteLine(name);
-            //}
-
-            //List<int> testScores = new List<int>() { 100, 98, 87, 76 };
-            //List<int> passingScores = new List<int>();
-
-            //foreach (int score in testScores)
-            //{
-            //    if (score > 85)
-            //    {
-            //        passingScores.Add(score);
-            //    }
-            //}
-
-            //Console.WriteLine(passingScores.Count);
-
-            //Console.ReadLine();
         }
     }
 }
