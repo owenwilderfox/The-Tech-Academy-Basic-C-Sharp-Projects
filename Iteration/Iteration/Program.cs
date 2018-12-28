@@ -78,7 +78,29 @@ namespace Iteration
 
             //6. Create a List of strings where each item in the list is unique. Ask the user to select text to search for in the List. Create a loop that iterates through the list and then displays the index of the array that contains matching text on the screen.
 
+            //List<string> bookTitles = new List<string>();
+
+            //bookTitles.Add("SENSE AND SENSIBILITY");
+            //bookTitles.Add("PRIDE AND PREJUDICE");
+            //bookTitles.Add("MANSFIELD PARK");
+            //bookTitles.Add("EMMA");
+            //bookTitles.Add("NORTHANGER ABBEY");
+            //bookTitles.Add("PERSUASION");
+            //bookTitles.Add("LADY SUSAN");
+
+            //Console.WriteLine("Please enter the name of a Jane Austen novel you'd like to search for in the database. You may enter a partial name: ");
+            //string searchTitle = Console.ReadLine().ToUpper();
+
+            //foreach (string title in bookTitles)
+            //{
+            //    if (title.Contains(searchTitle))
+            //    {
+            //        Console.WriteLine(title);
+            //    }
+            //}
+
             List<string> bookTitles = new List<string>();
+            List<string> foundTitles = new List<string>();
 
             bookTitles.Add("SENSE AND SENSIBILITY");
             bookTitles.Add("PRIDE AND PREJUDICE");
@@ -88,6 +110,7 @@ namespace Iteration
             bookTitles.Add("PERSUASION");
             bookTitles.Add("LADY SUSAN");
 
+
             Console.WriteLine("Please enter the name of a Jane Austen novel you'd like to search for in the database. You may enter a partial name: ");
             string searchTitle = Console.ReadLine().ToUpper();
 
@@ -95,10 +118,20 @@ namespace Iteration
             {
                 if (title.Contains(searchTitle))
                 {
-                    Console.WriteLine(title);
+                    foundTitles.Add(title);
                 }
             }
 
+            Console.WriteLine(foundTitles);
+
+            if (foundTitles.Count > 0)
+            {
+                foundTitles.ForEach(Console.WriteLine);
+            }
+            else
+            {
+                Console.WriteLine("The database was unable to find a title that contained " + searchTitle + ".");
+            }
 
             Console.ReadLine();
 
