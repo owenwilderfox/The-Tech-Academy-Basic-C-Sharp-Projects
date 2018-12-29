@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Iteration
 {
@@ -78,22 +79,47 @@ namespace Iteration
 
             //#6-8 
 
+            //List<string> colors = new List<string>();
+            //colors.Add("blue");
+            //colors.Add("red");
+            //colors.Add("yellow");
+
+            //Console.WriteLine("Please type in the name of a primary color:");
+            //string selectedColor = Console.ReadLine();
+
+            //if (colors.Contains(selectedColor))
+            //{
+            //    Console.WriteLine("You have selected " + selectedColor + ". The index that color is at is " + colors.IndexOf(selectedColor) + ".");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You have selected a color that is not in the database.");
+            //}
+
+            
+            //#9
+
             List<string> colors = new List<string>();
             colors.Add("blue");
             colors.Add("red");
             colors.Add("yellow");
+            colors.Add("blue");
 
-            Console.WriteLine("Please type in the name of a primary color:");
+            Console.WriteLine("Please type in the name of a primary color: ");
             string selectedColor = Console.ReadLine();
 
-            //for (int i = 0; i < colors.Count; i++)
-            if (colors.Contains(selectedColor))
+
+            for (int i = 0; i < colors.Count; i++)
             {
-                Console.WriteLine("You have selected " + selectedColor + ". The index that color is at is " + colors.IndexOf(selectedColor) + ".");
-            }
-            else
-            {
-                Console.WriteLine("You have selected a color that is not in the database.");
+                if (colors[i].Contains(selectedColor))
+                {
+                    Console.WriteLine(colors.IndexOf(selectedColor));
+                    i++;
+                }
+                else
+                {
+                    Console.WriteLine("You have selected a color that is not listed.");
+                }
             }
 
             Console.ReadLine();
