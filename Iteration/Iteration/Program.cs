@@ -8,7 +8,7 @@ namespace Iteration
         static void Main(string[] args)
         {
 
-            //#1: 1. Create a one-dimensional Array of strings. Ask the user to input some text. Create a loop that goes through each string in the Array, adding the user’s text to the string. Then create a loop that prints off each string in the Array on a separate line.
+            //#1
 
             //string[] dogNames = new string[5];
             //Console.WriteLine("Let's make a list of five dog names you enjoy:");
@@ -26,7 +26,7 @@ namespace Iteration
             //    Console.WriteLine(dogNames[i]);
             //}
 
-            //#2. Create an infinite loop.
+            //#2
 
             //Console.WriteLine("Let's do some multiplication. Please enter a number:");
             //int enteredNumber = Convert.ToInt32(Console.ReadLine());
@@ -46,7 +46,7 @@ namespace Iteration
             //    Console.WriteLine(enteredNumber);
             //}
 
-            //4. Create a loop where the comparison used to determine whether to continue iterating the loop is a “<” operator.
+            //#4
 
             //int[] ambientTemperature = { 99, 103, 45, 78, 67, 45, 58 };
 
@@ -60,7 +60,7 @@ namespace Iteration
             //    }
             //}
 
-            //5. Create a loop where the comparison used to determine whether to continue iterating the loop is a “<=” operator.
+            //#5
 
             //int[] rentalAges = { 18, 45, 34, 56, 23, 20, 21 };
 
@@ -76,61 +76,24 @@ namespace Iteration
             //    }
             //}
 
-            //6. Create a List of strings where each item in the list is unique. Ask the user to select text to search for in the List. Create a loop that iterates through the list and then displays the index of the array that contains matching text on the screen.
+            //#6-8 
 
-            //List<string> bookTitles = new List<string>();
+            List<string> colors = new List<string>();
+            colors.Add("blue");
+            colors.Add("red");
+            colors.Add("yellow");
 
-            //bookTitles.Add("SENSE AND SENSIBILITY");
-            //bookTitles.Add("PRIDE AND PREJUDICE");
-            //bookTitles.Add("MANSFIELD PARK");
-            //bookTitles.Add("EMMA");
-            //bookTitles.Add("NORTHANGER ABBEY");
-            //bookTitles.Add("PERSUASION");
-            //bookTitles.Add("LADY SUSAN");
+            Console.WriteLine("Please type in the name of a primary color:");
+            string selectedColor = Console.ReadLine();
 
-            //Console.WriteLine("Please enter the name of a Jane Austen novel you'd like to search for in the database. You may enter a partial name: ");
-            //string searchTitle = Console.ReadLine().ToUpper();
-
-            //foreach (string title in bookTitles)
-            //{
-            //    if (title.Contains(searchTitle))
-            //    {
-            //        Console.WriteLine(title);
-            //    }
-            //}
-
-            List<string> bookTitles = new List<string>();
-            List<string> foundTitles = new List<string>();
-
-            bookTitles.Add("SENSE AND SENSIBILITY");
-            bookTitles.Add("PRIDE AND PREJUDICE");
-            bookTitles.Add("MANSFIELD PARK");
-            bookTitles.Add("EMMA");
-            bookTitles.Add("NORTHANGER ABBEY");
-            bookTitles.Add("PERSUASION");
-            bookTitles.Add("LADY SUSAN");
-
-
-            Console.WriteLine("Please enter the name of a Jane Austen novel you'd like to search for in the database. You may enter a partial name: ");
-            string searchTitle = Console.ReadLine().ToUpper();
-
-            foreach (string title in bookTitles)
+            //for (int i = 0; i < colors.Count; i++)
+            if (colors.Contains(selectedColor))
             {
-                if (title.Contains(searchTitle))
-                {
-                    foundTitles.Add(title);
-                }
-            }
-
-            Console.WriteLine(foundTitles);
-
-            if (foundTitles.Count > 0)
-            {
-                foundTitles.ForEach(Console.WriteLine);
+                Console.WriteLine("You have selected " + selectedColor + ". The index that color is at is " + colors.IndexOf(selectedColor) + ".");
             }
             else
             {
-                Console.WriteLine("The database was unable to find a title that contained " + searchTitle + ".");
+                Console.WriteLine("You have selected a color that is not in the database.");
             }
 
             Console.ReadLine();
