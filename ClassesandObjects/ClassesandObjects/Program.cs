@@ -10,6 +10,12 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
+
+            //Console.WriteLine(cardOne.Face + " of " + cardOne.Suit);
+
+            Deck deck = new Deck();
+
+            Console.ReadLine();
         }
     }
 }
