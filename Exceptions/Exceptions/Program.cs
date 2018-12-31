@@ -47,6 +47,7 @@ namespace Exceptions
 
             finally
             {
+                Console.WriteLine("Restart program to try again.");
                 Console.ReadLine();
             }
 
