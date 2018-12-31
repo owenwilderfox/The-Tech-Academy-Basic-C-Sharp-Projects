@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Iteration
 {
@@ -97,30 +96,60 @@ namespace Iteration
             //}
 
             
-            //#9
+            //#9-10
 
-            List<string> colors = new List<string>();
-            colors.Add("blue");
-            colors.Add("red");
-            colors.Add("yellow");
-            colors.Add("blue");
+            //List<string> colors = new List<string>();
+            //colors.Add("blue");
+            //colors.Add("red");
+            //colors.Add("yellow");
+            //colors.Add("blue");
 
-            Console.WriteLine("Please type in the name of a primary color: ");
-            string selectedColor = Console.ReadLine();
+            //Console.WriteLine("Please type in the name of a primary color: ");
+            //string selectedColor = Console.ReadLine();
 
 
-            for (int i = 0; i < colors.Count; i++)
-            {
-                if (colors[i].Contains(selectedColor))
-                {
-                    Console.WriteLine(colors.IndexOf(selectedColor));
-                    i++;
-                }
-                else
-                {
-                    Console.WriteLine("You have selected a color that is not listed.");
-                }
-            }
+            //int i = 0;
+
+            //foreach (var color in colors)
+            //{
+            //    if (color == selectedColor)
+            //    {
+            //        Console.WriteLine("This color exists at index " + i);
+            //        i++;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("This color does not exist within the database.");
+            //    }
+            //}
+
+            //#10 
+
+            //List<string> colors = new List<string>();
+            //colors.Add("blue");
+            //colors.Add("red");
+            //colors.Add("yellow");
+            //colors.Add("blue");
+
+            //string temp_color = null;
+
+            //foreach (var color in colors)
+            //    if (temp_color == null)
+            //    {
+            //        temp_color = color;
+            //    }
+            //    else
+            //     {
+            //        //it's anything after the first loop
+            //        if (color == temp_color)
+            //        {
+            //            Console.WriteLine(color + ": this entry appears twice in the database.");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine(color);
+            //        }
+            //    }
 
             Console.ReadLine();
 
