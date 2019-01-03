@@ -15,16 +15,17 @@ namespace Parameter
         
         public int Value { get; set; }
 
-        //Method
-        public static Number MultiplicationLoop(Number number)
+        //Method One
+        public static Number MultiplicationLoop(Number number, int times)
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < times; i++)
             {
-                int tempNumberValue = number.Value * 5;
+                int tempNumberValue = number.Value * 2;
                 number.Value = tempNumberValue;
                 i++;
             }
             return number;
         }
+
     }
 }

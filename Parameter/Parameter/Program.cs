@@ -17,12 +17,15 @@ namespace Parameter
 
             Number number = new Number();
             number.Value = enteredNumber;
+            number = Number.MultiplicationLoop(number: number, times: 1);
 
-            Number.MultiplicationLoop(number);
+            //Number.MultiplicationLoop(number);
 
             Console.WriteLine("Your new number is: " + number.Value);
-            Console.WriteLine("Your number (" + enteredNumber + ") was multipied " + times + " times.");
+            //Console.WriteLine("Your number (" + enteredNumber + ") was multipied " + times + " times.");
             Console.ReadLine();
         }
     }
 }
+
+//enteredNumber as parameter, times as parameter
