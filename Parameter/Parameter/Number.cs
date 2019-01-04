@@ -15,20 +15,6 @@ namespace Parameter
         
         public int Value { get; set; }
 
-        ////Method One
-        //public static Number MultiplicationLoop(Number number, out int timesMultiplied, int times)
-        //{
-        //    timesMultiplied = 0;
-        //    for (int i = 0; i < times; i++)
-        //    {
-        //        timesMultiplied++;
-        //        int tempNumberValue = number.Value * 2;
-        //        number.Value = tempNumberValue;
-        //    }
-        //    return number;
-        //}
-
-        //Method Two
         public void MultiplicationLoop(Number number, out int timesMultiplied, int times)
         {
             timesMultiplied = 0;
