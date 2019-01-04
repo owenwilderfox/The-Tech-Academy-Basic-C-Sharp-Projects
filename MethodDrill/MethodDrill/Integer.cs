@@ -27,9 +27,17 @@ namespace MethodDrill
         //Method Two
         public static Integer Multiply(Integer secondInteger)
         {
-            decimal tempSecondIntger = secondInteger.decValue * 2;
-            secondInteger.decValue = tempSecondIntger;
+            decimal tempSecondInteger = secondInteger.decValue * 2;
+            secondInteger.decValue = tempSecondInteger;
             return secondInteger;
+        }
+
+        //Method Three
+        public static Integer Divide(Integer thirdInteger)
+        {
+            int tempThirdInteger = thirdInteger.Value / 2;
+            thirdInteger.Value = tempThirdInteger;
+            return thirdInteger;
         }
     }
 }
