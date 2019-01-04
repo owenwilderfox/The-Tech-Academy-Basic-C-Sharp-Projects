@@ -24,7 +24,7 @@ namespace Parameter
                 int tempNumberValue = number.Value * 2;
                 number.Value = tempNumberValue;
             }
-            //Console.WriteLine(number.Value);
+
             Console.WriteLine("Your number went through a multiplication loop " + timesMultiplied + " times, multipying the product by two each time.");
             Console.WriteLine("Your new number is " + number.Value + ".");
         }
