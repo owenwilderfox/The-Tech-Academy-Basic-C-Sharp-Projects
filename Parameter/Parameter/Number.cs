@@ -15,8 +15,21 @@ namespace Parameter
         
         public int Value { get; set; }
 
-        //Method One
-        public static Number MultiplicationLoop(Number number, out int timesMultiplied, int times)
+        ////Method One
+        //public static Number MultiplicationLoop(Number number, out int timesMultiplied, int times)
+        //{
+        //    timesMultiplied = 0;
+        //    for (int i = 0; i < times; i++)
+        //    {
+        //        timesMultiplied++;
+        //        int tempNumberValue = number.Value * 2;
+        //        number.Value = tempNumberValue;
+        //    }
+        //    return number;
+        //}
+
+        //Method Two
+        public void MultiplicationLoop(Number number, out int timesMultiplied, int times)
         {
             timesMultiplied = 0;
             for (int i = 0; i < times; i++)
@@ -25,7 +38,9 @@ namespace Parameter
                 int tempNumberValue = number.Value * 2;
                 number.Value = tempNumberValue;
             }
-            return number;
+            //Console.WriteLine(number.Value);
+            Console.WriteLine("Your number went through a multiplication loop " + timesMultiplied + " times, multipying the product by two each time.");
+            Console.WriteLine("Your new number is " + number.Value + ".");
         }
 
     }

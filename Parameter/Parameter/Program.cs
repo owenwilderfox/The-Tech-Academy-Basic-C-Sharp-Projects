@@ -17,10 +17,8 @@ namespace Parameter
             Number number = new Number();
             number.Value = enteredNumber;
             int timesMultiplied = 0;
-            number = Number.MultiplicationLoop(number, out timesMultiplied, 4);
+            number.MultiplicationLoop(number, out timesMultiplied, 4);
 
-            Console.WriteLine("Your number (" + enteredNumber + ") went through a multiplication loop " + timesMultiplied + " times, multipying the product by two each time.");
-            Console.WriteLine("Your new number is " + number.Value + ".");
             Console.ReadLine();
         }
     }
