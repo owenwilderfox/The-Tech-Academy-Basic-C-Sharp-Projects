@@ -23,12 +23,18 @@ namespace ClassDrill2
             return product;
         }
 
-        public int Multiplication(int enteredNumber3, int enteredNumber4, out int times)
+        public int Multiplication(int enteredNumber3, int enteredNumber4, out int times2)
         {
-            times = 5;
+            times2 = 5;
             int product1 = enteredNumber3 * enteredNumber4;
-            int product2 = product1 * times;
+            int product2 = product1 * times2;
             return product2;
+        }
+
+        public static int Static()
+        {
+            int product3 = 4 * 5;
+            return product3;
         }
 
     }
