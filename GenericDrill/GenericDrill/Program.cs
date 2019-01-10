@@ -10,9 +10,15 @@ namespace GenericDrill
     {
         static void Main(string[] args)
         {
-            Employee<string> Employees = new Employee<string>() { "John", "Fred" };
+            Employee<string> Employees = new Employee<string>() { Things = { "John", "Fred", "Mark" } };
 
-            Employee<int> EmployeeID = new Employee<int>() { 1, 2, 3 };
+            Employee<int> EmployeeID = new Employee<int>() { Things = { 1, 2, 3 } };
+
+            foreach (string employee in Employees)
+            {
+
+            }
+
         }
     }
 }
