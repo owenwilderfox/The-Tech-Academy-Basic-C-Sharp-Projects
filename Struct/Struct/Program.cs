@@ -10,6 +10,13 @@ namespace Struct
     {
         static void Main(string[] args)
         {
+            Number number = new Number()
+            {
+                Amount = 1.5M
+            };
+
+            Console.WriteLine("Amount: {0}", number.Amount);
+            Console.ReadLine();
         }
     }
 }
