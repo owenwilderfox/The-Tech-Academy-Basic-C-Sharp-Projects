@@ -22,14 +22,35 @@ namespace LambdaExpressionDrill
             employeeList.Add(new Employee { FirstName = "Joe", LastName = "Helens", ID = 108 });
             employeeList.Add(new Employee { FirstName = "Joe", LastName = "Everett", ID = 109 });
 
-            //Working foreach loop
-            foreach (Employee employee in employeeList)
-            {
-                if (employee.FirstName == "Joe")
-                Console.WriteLine("{0} {1} {2}", employee.FirstName, employee.LastName, employee.ID);
-            }
+            //// Working solution for #2: create a foreach loop that singles out everyone with the first name "Joe" and add to a new list
+            //List<Employee> joeList = new List<Employee>();
 
-            //Console.WriteLine(employeeList);
+            //foreach (var employee in employeeList)
+            //{
+            //    if (employee.FirstName.Contains("Joe"))
+            //    {
+            //        joeList.Add(employee);
+            //    }
+            //}
+
+            //foreach(var joe in joeList)
+            //{
+            //    Console.WriteLine("{0} {1} {2}", joe.FirstName, joe.LastName, joe.ID);
+            //}
+
+
+            //Console.WriteLine("{0} {1} {2}", employee.FirstName, employee.LastName, employee.ID);
+
+
+            //// Working solution for #3: create separate list with a Lambda expression
+            //List<Employee> joeList2 = employeeList.Where(x => x.FirstName.Contains("Joe")).ToList();
+            //foreach (Employee joe in joeList2)
+            //{
+            //    Console.WriteLine("{0} {1} {2}", joe.FirstName, joe.LastName, joe.ID);
+            //}
+
+            //
+
             Console.ReadLine();
         }
     }
