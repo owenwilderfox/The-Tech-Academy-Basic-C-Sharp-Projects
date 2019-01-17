@@ -15,9 +15,13 @@ namespace ExceptionHandlingDrill
                 Console.WriteLine("Please enter your age:");
                 int age = Convert.ToInt32(Console.ReadLine());
 
-                if (age <= 0)
+                if (age < 0)
                 {
-                    throw new InvalidAge();
+                    throw new NegativeAge();
+                }
+                else if (age == 0)
+                {
+                    throw new ZeroAge();
                 }
                 else
                 {
@@ -25,9 +29,13 @@ namespace ExceptionHandlingDrill
                     Console.ReadLine();
                 }
             }
-            catch (InvalidAge ex)
+            catch (NegativeAge ex)
             {
-                Console.WriteLine("You've entered an age that is not a whole number greater than zero.");
+                Console.WriteLine("Error: You've entered an age that is not a whole number greater than zero.");
+            }
+            catch (ZeroAge ex)
+            {
+                Console.WriteLine("Error: You've entered an age that is equal to zero.");
             }
             catch (Exception ex)
             {

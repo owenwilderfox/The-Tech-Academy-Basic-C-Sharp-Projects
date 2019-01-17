@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExceptionHandlingDrill
 {
-    class InvalidAge : Exception
+    class NegativeAge : Exception
     {
     }
 }
