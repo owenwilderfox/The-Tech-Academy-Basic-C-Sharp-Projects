@@ -11,10 +11,13 @@ namespace AdditionalFeaturesDrill
         static void Main(string[] args)
         {
             const string libraryBranch = "Huron St";
+            var address = "199 NW Huron St.";
 
-            Console.WriteLine("Welcome to the {0} Branch Library.", libraryBranch);
+            Console.WriteLine("Welcome to the {0} Branch Library at {1}", libraryBranch, address);
 
-            Book Book = new Book("Emma");
+
+
+
 
             Console.ReadLine();
 
