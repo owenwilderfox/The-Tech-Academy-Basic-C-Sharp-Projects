@@ -13,6 +13,9 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
+
+            Player newPlayer = new Player("Jesse");
+
             const string casinoName = "Grand Hotel and Casino";
             
             Console.WriteLine("Welcome to the {0}. Let's start by telling me your name:", casinoName);
