@@ -21,7 +21,7 @@ namespace TwentyOne
             string playerName = Console.ReadLine();
             if (playerName.ToLower() == "admin")
             {
-                List<ExceptionEntity> Exceptions = new ReadExceptions();
+                List<ExceptionEntity> Exceptions = ReadExceptions();
                 foreach (var exception in Exceptions)
                 {
                     Console.Write(exception.Id + " | ");
